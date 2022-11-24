@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To Do list </title>
+
+	<link rel="stylesheet" href="todo.css" />
+	<style>
+		body{
+			background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+			url("https://png.pngtree.com/thumb_back/fh260/background/20201109/pngtree-abstract-sticky-note-mokeup-with-plant-shadow-background-image_466346.jpg");
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		
+		<h1>To Do list </h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> 
+
+			</div>
+		</section>
+	</main>
+
+	<script src="todo.js"></script>
+</body>
+</html>
